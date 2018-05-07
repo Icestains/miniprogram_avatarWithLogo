@@ -1,0 +1,20 @@
+<!-- index.wxml -->
+
+<view class="container">
+  <view class='drawPart'>
+
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <canvas class='avatar' height="" canvas-id="myCanvas"></canvas>
+      <image class="imageAvatar avatar" src="{{avatarUrl}}" bindload='drawCanvas' ></image>
+    </block>
+  </view>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="downBtn">
+    <button type='primary' class="downloadBtn" bindtap="savePic">下载头像</button>
+  </view>
+  
+</view>
