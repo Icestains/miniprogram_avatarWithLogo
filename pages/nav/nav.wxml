@@ -1,0 +1,7 @@
+<!-- nav.wxml -->
+
+<view class='navPage' bindtap='goIndex'>
+  <image mode="aspectFill" class='navPageBackPic' src="{{navPageBackPicSrc}}"></image>
+  <view class='flyingstudio' bindtap='flyingstudio'></view>
+  <text class="{{isShow?'Showfs':'Hidefs'}}" >Powered by FlyingStudio Made by Icestains, TItanium, 白乌鸫</text>
+</view>

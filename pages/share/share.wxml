@@ -1,0 +1,11 @@
+<!-- share.html -->
+<view class='container share'>
+  <canvas class='avatar' canvas-id="myShareCanvas"></canvas>
+  <text class="shareText">{{shareText}}</text>
+
+  <view class="footer">
+     <image class="shareBtnPic" bindtap="toFriends" src="{{shareToPicSrc}}"></image> 
+    <button open-type='share' class="shareBtn toFriends" bindtap="toFriends"></button>
+    <button class="shareBtn toMoments" bindtap="toMoments"></button>
+  </view>
+</view>

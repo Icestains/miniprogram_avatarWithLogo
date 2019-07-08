@@ -1,0 +1,46 @@
+/* nav.wxss */
+
+page {
+  height: 100%;
+}
+
+.navPageBackPic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+}
+
+.flyingstudio{
+  position: absolute;
+  width: 100vw;
+  height: 300rpx;
+  z-index: 3;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  text-align: center;
+}
+.Showfs{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 40rpx;
+  z-index: 2;
+   font-size: 22rpx; 
+  line-height: 30rpx;
+  text-align: center;
+  transition: .5s;
+}
+
+.Hidefs{
+  position: absolute;
+  top: -40rpx;
+  width: 100vw;
+  height: 40rpx;
+  z-index: 2;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  text-align: center;
+  transition: .5s;
+}

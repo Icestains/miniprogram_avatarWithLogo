@@ -1,20 +1,21 @@
 <!-- index.wxml -->
 
 <view class="container">
-  <view class='drawPart'>
+  <image mode="aspectFill" class='navPageBackPic' src="{{navPageBackPicSrc}}"></image>
+  <view class='shareText'>
+  </view>
 
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <view class='drawPart'>
+    <button class='getAvatarBtn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击获取你的头像 </button>
     <block wx:else>
-      <canvas class='avatar' height="" canvas-id="myCanvas"></canvas>
-      <image class="imageAvatar avatar" src="{{avatarUrl}}" bindload='drawCanvas' ></image>
+      <canvas class='avatar' canvas-id="myCanvas"></canvas>
+      <canvas class='avatarHide' canvas-id="myCanvasHide"></canvas>
     </block>
   </view>
-
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <image class="changeBtn LeftBtn" bindtap="changeLogoLeft" src='{{btn_leftArrow}}'></image>
+  <image class="changeBtn RightBtn" bindtap="changeLogoRight" src='{{btn_rightArrow}}'></image>
   <view class="downBtn">
-    <button type='primary' class="downloadBtn" bindtap="savePic">下载头像</button>
+    <image class="downloadBtn" bindtap="savePic" src="{{btn_getAvatar}}"></image>
+    <image class="downloadBtn" bindtap="chooseLocalImage" src="{{btn_changeAvatar}}"></image>
   </view>
-  
 </view>

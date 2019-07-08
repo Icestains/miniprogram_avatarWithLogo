@@ -1,9 +1,11 @@
 /**index.wxss**/
 
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.navPageBackPic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 .drawPart {
@@ -11,26 +13,63 @@
   min-height: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.getAvatarBtn {
+  width: 60vw;
+  height: 60vw;
+  top: 62vh;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  line-height: 56vw;
 }
 
 .avatar {
-  width: 100vw;
-  height: 100vw;
+  width: 60vw;
+  height: 60vw;
+  top: 62vh;
+  transform: translateY(-50%);
 }
 
-.imageAvatar {
-  display: none;
+.avatarHide {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  right: 1000px;
+  top: -1000px;
 }
 
-.usermotto {
-  margin-top: 40px;
+.changeBtn {
+  position: absolute;
+  width: 70rpx;
+  height: 80rpx;
+  background: none;
+  top: 58vh;
+  line-height: 80rpx;
+}
+
+.RightBtn {
+  right: 50rpx;
+}
+
+.LeftBtn {
+  left: 50rpx;
 }
 
 .downBtn {
-  margin: 20px;
+  display: flex;
+  /* bottom: 260rpx; */
+  bottom: 2vh;
+  position: absolute;
+  flex-direction: row;
 }
 
 .downloadBtn {
-  margin-top: 20px;
-  width: 700rpx;
+  width: 230rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: none;
+  margin: 0 40rpx;
 }
